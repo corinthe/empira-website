@@ -16,34 +16,36 @@ This skill generates a bilingual (FR/EN) draft article for the EMPIRA website bl
 
 Read `articles/topics.json` and select the first topic with `"status": "pending"`. Update its status to `"in-progress"`.
 
-### Step 2 — Research
+### Step 2 — Research (in-depth)
 
-Launch multiple agents in parallel to research the topic:
-- Agent 1: Search for recent news, developments, and statistics on the topic
-- Agent 2: Search for practical tools, products, or services relevant to the topic
-- Agent 3: Search for best practices, case studies, or expert opinions
+Launch multiple agents in parallel to research the topic **in depth**:
+- Agent 1: Search for **scientific papers, benchmarks, and technical reports** (arXiv, Google Scholar, official technical reports from OpenAI/Anthropic/Google/Meta, research blogs). Look for hard data: benchmark scores, quantitative comparisons, peer-reviewed findings.
+- Agent 2: Search for **expert opinions and analysis** from recognised voices in the field (Andrej Karpathy, Simon Willison, Ethan Mollick, Yann LeCun, industry analysts at Gartner/McKinsey/BCG, etc.). Look for blog posts, newsletters, conference talks, and interviews that provide unique insights.
+- Agent 3: Search for **real-world case studies, enterprise deployments, and practical experience reports**. Look for companies that have published results, ROI data, implementation challenges, or lessons learned.
 
-All research should be recent (2024-2026) and focused on practical, actionable information.
+All research should be recent (2024-2026). Prioritise **primary sources** over generic blog posts. Cite sources in the article (author name, publication, date) to build credibility.
 
 ### Step 3 — Write the article
 
 Based on the research, write a ~1000-word article in BOTH French and English.
 
 **Writing style:**
-- Simple, clear, accessible language — written for non-technical readers
-- No unnecessary jargon. If a technical term is needed, explain it briefly
-- Conversational but professional tone
-- Short paragraphs, use of subheadings, bullet points where appropriate
-- Concrete examples and real-world applications
+- **Professional and technically informed** — write as an expert who can explain complex topics clearly, not as a beginner summarising Wikipedia
+- Technical terms are welcome when relevant, but always explained in context
+- Show depth of knowledge: cite specific benchmarks, numbers, expert quotes, and real examples
+- Offer **original analysis and perspective** — don't just list features, explain WHY something matters and WHAT it means for businesses
+- Challenge common assumptions when appropriate ("you might think X, but actually...")
 - NOT a sales pitch — informative and genuinely useful content
 - Do NOT mention EMPIRA services or add CTAs. These are purely informative articles
+- The tone should position the author as a knowledgeable specialist who has done the research, not someone parroting marketing materials
 
 **Structure:**
-- Engaging title (SEO-optimised)
-- Brief intro (2-3 sentences, hook the reader)
+- Engaging, specific title (SEO-optimised, avoid generic clickbait)
+- Strong opening that shows expertise (a surprising stat, a contrarian take, a concrete problem)
 - 3-5 sections with clear subheadings
-- Key takeaways or practical tips
-- Brief conclusion
+- Data, citations, and expert references throughout
+- Practical takeaways grounded in evidence
+- Conclusion with a clear, opinionated perspective
 
 **SEO:**
 - Title tag, meta description, and Open Graph tags in both languages
