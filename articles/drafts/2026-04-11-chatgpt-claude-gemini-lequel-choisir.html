@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title="meta.title">ChatGPT, Claude ou Gemini : lequel choisir pour votre entreprise ? | EMPIRA</title>
+  <meta name="description" content="Comparatif pratique entre ChatGPT, Claude et Gemini pour les entreprises. Prix, forces, faiblesses et conseils pour faire le bon choix." data-i18n-meta="meta.description">
+  <meta name="keywords" content="ChatGPT entreprise, Claude vs ChatGPT, Gemini entreprise, IA pour PME, comparatif IA, intelligence artificielle Belgique">
+  <meta name="author" content="EMPIRA SRL">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://empira.be/articles/chatgpt-claude-gemini-lequel-choisir">
+
+  <meta property="og:title" content="ChatGPT, Claude ou Gemini : lequel choisir pour votre entreprise ?">
+  <meta property="og:description" content="Comparatif pratique entre ChatGPT, Claude et Gemini pour les entreprises.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://empira.be/articles/chatgpt-claude-gemini-lequel-choisir">
+  <meta property="og:locale" content="fr_BE">
+  <meta property="og:site_name" content="EMPIRA">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChatGPT, Claude ou Gemini : lequel choisir pour votre entreprise ?">
+
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { DEFAULT: '#a3891f', light: '#c9a82a', dark: '#4d410f', 50: 'rgba(163,137,31,0.1)', 100: 'rgba(163,137,31,0.2)' },
+            dark: { DEFAULT: '#161616', light: '#1e1e1e', lighter: '#2a2a2a' }
+          },
+          fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    ::selection { background: rgba(163,137,31,0.3); color: #fff; }
+    .nav-link { color: rgba(255,255,255,0.7); font-size: 0.875rem; font-weight: 500; transition: color 0.2s; text-decoration: none; }
+    .nav-link:hover { color: #a3891f; }
+    .lang-btn { padding: 0.25rem 0.625rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.5); transition: all 0.2s; background: transparent; border: none; cursor: pointer; }
+    .lang-btn.active { background: #a3891f; color: #161616; }
+    .lang-btn:hover:not(.active) { color: #a3891f; }
+    .article-content h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(163,137,31,0.2); }
+    .article-content h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 600; color: #a3891f; margin-top: 1.75rem; margin-bottom: 0.75rem; }
+    .article-content p { color: rgba(255,255,255,0.75); line-height: 1.85; margin-bottom: 1.25rem; }
+    .article-content ul { list-style: none; padding: 0; margin-bottom: 1.25rem; }
+    .article-content li { color: rgba(255,255,255,0.7); padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-content li::before { content: ''; position: absolute; left: 0; top: 0.7rem; width: 6px; height: 6px; background: #a3891f; border-radius: 50%; }
+    .article-content strong { color: #fff; font-weight: 600; }
+    .article-content a { color: #a3891f; text-decoration: underline; text-underline-offset: 2px; }
+    .article-content a:hover { color: #c9a82a; }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    .comparison-table th { background: rgba(163,137,31,0.15); color: #a3891f; font-family: 'Montserrat', sans-serif; font-weight: 600; padding: 0.75rem 1rem; text-align: left; font-size: 0.875rem; }
+    .comparison-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: rgba(255,255,255,0.7); font-size: 0.875rem; }
+    .comparison-table tr:hover td { background: rgba(163,137,31,0.05); }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #161616; }
+    ::-webkit-scrollbar-thumb { background: rgba(163,137,31,0.3); border-radius: 4px; }
+  </style>
+</head>
+<body class="bg-dark text-white font-body antialiased">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur-sm border-b border-gold/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="../../index.html" class="flex-shrink-0">
+          <span class="font-heading text-xl font-bold tracking-widest text-gold">EMPIRA</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../../index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
+          <a href="../../index.html#about" class="nav-link" data-i18n="nav.about">À propos</a>
+          <a href="../../index.html#resources" class="nav-link" data-i18n="nav.resources">Ressources</a>
+          <a href="../../index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+          <div class="flex items-center space-x-1 ml-4 border border-gold/30 rounded-full px-1 py-1">
+            <button id="lang-fr" class="lang-btn active" onclick="setLang('fr')">FR</button>
+            <button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+          </div>
+        </div>
+        <div class="md:hidden flex items-center space-x-3">
+          <div class="flex items-center space-x-1 border border-gold/30 rounded-full px-1 py-1">
+            <button class="lang-btn active text-xs" id="lang-fr-m" onclick="setLang('fr')">FR</button>
+            <button class="lang-btn text-xs" id="lang-en-m" onclick="setLang('en')">EN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO IMAGE -->
+  <div class="pt-20">
+    <div class="w-full h-64 sm:h-80 md:h-96 relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80" alt="Intelligence artificielle et technologie" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-b from-dark/30 via-dark/50 to-dark"></div>
+    </div>
+  </div>
+
+  <!-- ARTICLE -->
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 -mt-20 relative z-10 pb-20">
+    <!-- Meta -->
+    <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+      <span class="flex items-center gap-1.5">
+        <i data-lucide="calendar" class="w-4 h-4"></i>
+        11 avril 2026
+      </span>
+      <span class="flex items-center gap-1.5">
+        <i data-lucide="clock" class="w-4 h-4"></i>
+        <span data-i18n="article.readtime">5 min de lecture</span>
+      </span>
+      <span class="inline-block px-2.5 py-0.5 rounded-full bg-gold-50 text-gold text-xs font-medium" data-i18n="article.tag">Guide</span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight" data-i18n="article.title">
+      ChatGPT, Claude ou Gemini : lequel choisir pour votre entreprise ?
+    </h1>
+
+    <!-- Content -->
+    <div class="article-content">
+      <p data-i18n="article.intro">
+        En 2026, les assistants IA sont partout. ChatGPT, Claude, Gemini... Les options ne manquent pas, mais laquelle correspond vraiment aux besoins de votre entreprise ? Plutôt que de vous perdre dans les détails techniques, voici un comparatif clair et concret pour vous aider à faire le bon choix.
+      </p>
+
+      <h2 data-i18n="article.h2_1">Les trois poids lourds en bref</h2>
+
+      <h3 data-i18n="article.h3_chatgpt">ChatGPT (OpenAI)</h3>
+      <p data-i18n="article.p_chatgpt">
+        C'est le plus connu. Avec plus de 200 millions d'utilisateurs actifs par semaine, ChatGPT est devenu synonyme d'IA pour beaucoup de gens. Sa force ? Un écosystème gigantesque de plugins et d'intégrations, et une excellente intégration avec les outils Microsoft (Word, Excel, Outlook) via Copilot. Il est polyvalent : rédaction, analyse, code, création d'images... Il fait un peu de tout, et plutôt bien.
+      </p>
+
+      <h3 data-i18n="article.h3_claude">Claude (Anthropic)</h3>
+      <p data-i18n="article.p_claude">
+        Claude est le choix de ceux qui travaillent avec de longs documents ou qui ont besoin de résultats nuancés et précis. Sa capacité à traiter des textes très longs (jusqu'à un million de « tokens », soit l'équivalent de plusieurs centaines de pages) est inégalée. Il excelle en rédaction, en analyse juridique et en programmation. Autre atout : Anthropic ne réutilise pas vos données pour entraîner ses modèles, un argument de poids pour les entreprises soucieuses de confidentialité.
+      </p>
+
+      <h3 data-i18n="article.h3_gemini">Gemini (Google)</h3>
+      <p data-i18n="article.p_gemini">
+        Le point fort de Gemini, c'est Google. Si votre entreprise utilise Google Workspace (Gmail, Docs, Sheets, Drive), Gemini s'y intègre nativement. Il peut analyser vos emails, résumer vos documents et vous aider dans vos feuilles de calcul sans quitter votre environnement de travail. Il est aussi fort en recherche d'informations en temps réel, grâce à son accès direct au moteur de recherche Google.
+      </p>
+
+      <h2 data-i18n="article.h2_2">Comparatif rapide</h2>
+
+      <div class="overflow-x-auto">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>ChatGPT</th>
+              <th>Claude</th>
+              <th>Gemini</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-semibold text-white" data-i18n="article.table.price">Prix (par utilisateur/mois)</td>
+              <td>~20 €</td>
+              <td>~20 €</td>
+              <td>~20 €</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-white" data-i18n="article.table.free">Version gratuite</td>
+              <td data-i18n="article.table.yes1">Oui</td>
+              <td data-i18n="article.table.yes2">Oui</td>
+              <td data-i18n="article.table.yes3">Oui</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-white" data-i18n="article.table.strength">Point fort</td>
+              <td data-i18n="article.table.str1">Polyvalence, plugins</td>
+              <td data-i18n="article.table.str2">Documents longs, précision</td>
+              <td data-i18n="article.table.str3">Google Workspace</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-white" data-i18n="article.table.ecosystem">Écosystème</td>
+              <td>Microsoft</td>
+              <td>AWS, Google Cloud</td>
+              <td>Google</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-white" data-i18n="article.table.privacy">Confidentialité</td>
+              <td data-i18n="article.table.priv1">Bonne (version payante)</td>
+              <td data-i18n="article.table.priv2">Excellente</td>
+              <td data-i18n="article.table.priv3">Bonne (version payante)</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-white" data-i18n="article.table.french">Français</td>
+              <td data-i18n="article.table.fr1">Très bon</td>
+              <td data-i18n="article.table.fr2">Très bon</td>
+              <td data-i18n="article.table.fr3">Bon</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 data-i18n="article.h2_3">Quel outil pour quelle situation ?</h2>
+
+      <p data-i18n="article.p_situation_intro">
+        Il n'y a pas de « meilleur » outil dans l'absolu. Tout dépend de votre contexte :
+      </p>
+
+      <ul>
+        <li data-i18n="article.li1"><strong>Vous utilisez Microsoft 365 ?</strong> ChatGPT (via Copilot) sera le plus naturel à intégrer dans vos habitudes.</li>
+        <li data-i18n="article.li2"><strong>Vous êtes sur Google Workspace ?</strong> Gemini s'intègre sans effort dans Gmail, Docs et Sheets.</li>
+        <li data-i18n="article.li3"><strong>Vous traitez de longs documents (juridique, finance, rapports) ?</strong> Claude est le meilleur choix grâce à sa capacité d'analyse étendue.</li>
+        <li data-i18n="article.li4"><strong>La confidentialité est une priorité absolue ?</strong> Claude offre les meilleures garanties par défaut.</li>
+        <li data-i18n="article.li5"><strong>Vous voulez un maximum de flexibilité et de plugins ?</strong> ChatGPT a l'écosystème le plus riche.</li>
+        <li data-i18n="article.li6"><strong>Vous avez besoin d'informations en temps réel ?</strong> Gemini, connecté à la recherche Google, est imbattable.</li>
+      </ul>
+
+      <h2 data-i18n="article.h2_4">Quelques conseils avant de se lancer</h2>
+
+      <p data-i18n="article.p_tips1">
+        <strong>Testez avant de payer.</strong> Les trois outils proposent des versions gratuites. Essayez-les pendant une ou deux semaines avec des cas d'usage réels de votre entreprise. La théorie ne remplace pas l'expérience.
+      </p>
+
+      <p data-i18n="article.p_tips2">
+        <strong>Pensez RGPD.</strong> Si votre entreprise est basée en Belgique ou en Europe, vérifiez que le fournisseur propose un accord de traitement des données (DPA) et, idéalement, un hébergement des données en Europe. N'entrez jamais de données personnelles dans les versions gratuites sans un cadre contractuel adapté.
+      </p>
+
+      <p data-i18n="article.p_tips3">
+        <strong>Définissez vos cas d'usage.</strong> « On veut utiliser l'IA » ne suffit pas. Identifiez 2 ou 3 tâches concrètes où l'IA peut vous faire gagner du temps : rédaction d'emails, résumé de réunions, analyse de données, service client... C'est en partant du concret que vous ferez le bon choix.
+      </p>
+
+      <p data-i18n="article.p_tips4">
+        <strong>Ne mettez pas tous vos œufs dans le même panier.</strong> Rien ne vous empêche d'utiliser plusieurs outils en parallèle. Claude pour l'analyse de contrats, ChatGPT pour le brainstorming, Gemini pour les emails... Choisissez le bon outil pour chaque tâche.
+      </p>
+
+      <h2 data-i18n="article.h2_5">En résumé</h2>
+
+      <p data-i18n="article.p_conclusion">
+        ChatGPT, Claude et Gemini sont trois excellents outils, chacun avec ses forces. Le bon choix dépend de votre écosystème existant (Microsoft, Google ou autre), de vos besoins prioritaires (rédaction, analyse, intégration) et de votre sensibilité à la confidentialité. Le meilleur conseil ? Essayez-les. En quelques jours d'utilisation réelle, vous saurez lequel colle le mieux à votre manière de travailler.
+      </p>
+    </div>
+
+    <!-- Back link -->
+    <div class="mt-12 pt-8 border-t border-gold/10">
+      <a href="../../index.html#resources" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span data-i18n="article.back">Retour aux ressources</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark border-t border-gold/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div>
+          <span class="font-heading text-xl font-bold tracking-widest text-gold">EMPIRA</span>
+          <p class="text-gray-500 text-sm mt-4" data-i18n="footer.tagline">Consultant en intelligence artificielle</p>
+          <p class="text-gray-600 text-xs mt-2">BCE : BE-0717.662.913</p>
+        </div>
+        <div class="text-center">
+          <div class="flex justify-center space-x-6">
+            <a href="../../index.html#services" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.services">Services</a>
+            <a href="../../index.html#about" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.about">À propos</a>
+            <a href="../../index.html#contact" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-gray-600 text-sm">&copy; 2025 EMPIRA SRL</p>
+          <p class="text-gray-700 text-xs mt-1" data-i18n="footer.legal">Tous droits réservés</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      fr: {
+        "nav.services": "Services",
+        "nav.about": "À propos",
+        "nav.resources": "Ressources",
+        "nav.contact": "Contact",
+        "footer.tagline": "Consultant en intelligence artificielle",
+        "footer.legal": "Tous droits réservés",
+        "article.readtime": "5 min de lecture",
+        "article.tag": "Guide",
+        "article.title": "ChatGPT, Claude ou Gemini : lequel choisir pour votre entreprise ?",
+        "article.back": "Retour aux ressources",
+        "article.intro": "En 2026, les assistants IA sont partout. ChatGPT, Claude, Gemini... Les options ne manquent pas, mais laquelle correspond vraiment aux besoins de votre entreprise ? Plutôt que de vous perdre dans les détails techniques, voici un comparatif clair et concret pour vous aider à faire le bon choix.",
+        "article.h2_1": "Les trois poids lourds en bref",
+        "article.h3_chatgpt": "ChatGPT (OpenAI)",
+        "article.p_chatgpt": "C'est le plus connu. Avec plus de 200 millions d'utilisateurs actifs par semaine, ChatGPT est devenu synonyme d'IA pour beaucoup de gens. Sa force ? Un écosystème gigantesque de plugins et d'intégrations, et une excellente intégration avec les outils Microsoft (Word, Excel, Outlook) via Copilot. Il est polyvalent : rédaction, analyse, code, création d'images... Il fait un peu de tout, et plutôt bien.",
+        "article.h3_claude": "Claude (Anthropic)",
+        "article.p_claude": "Claude est le choix de ceux qui travaillent avec de longs documents ou qui ont besoin de résultats nuancés et précis. Sa capacité à traiter des textes très longs (jusqu'à un million de « tokens », soit l'équivalent de plusieurs centaines de pages) est inégalée. Il excelle en rédaction, en analyse juridique et en programmation. Autre atout : Anthropic ne réutilise pas vos données pour entraîner ses modèles, un argument de poids pour les entreprises soucieuses de confidentialité.",
+        "article.h3_gemini": "Gemini (Google)",
+        "article.p_gemini": "Le point fort de Gemini, c'est Google. Si votre entreprise utilise Google Workspace (Gmail, Docs, Sheets, Drive), Gemini s'y intègre nativement. Il peut analyser vos emails, résumer vos documents et vous aider dans vos feuilles de calcul sans quitter votre environnement de travail. Il est aussi fort en recherche d'informations en temps réel, grâce à son accès direct au moteur de recherche Google.",
+        "article.h2_2": "Comparatif rapide",
+        "article.table.price": "Prix (par utilisateur/mois)",
+        "article.table.free": "Version gratuite",
+        "article.table.yes1": "Oui", "article.table.yes2": "Oui", "article.table.yes3": "Oui",
+        "article.table.strength": "Point fort",
+        "article.table.str1": "Polyvalence, plugins",
+        "article.table.str2": "Documents longs, précision",
+        "article.table.str3": "Google Workspace",
+        "article.table.ecosystem": "Écosystème",
+        "article.table.privacy": "Confidentialité",
+        "article.table.priv1": "Bonne (version payante)",
+        "article.table.priv2": "Excellente",
+        "article.table.priv3": "Bonne (version payante)",
+        "article.table.french": "Français",
+        "article.table.fr1": "Très bon", "article.table.fr2": "Très bon", "article.table.fr3": "Bon",
+        "article.h2_3": "Quel outil pour quelle situation ?",
+        "article.p_situation_intro": "Il n'y a pas de « meilleur » outil dans l'absolu. Tout dépend de votre contexte :",
+        "article.li1": "<strong>Vous utilisez Microsoft 365 ?</strong> ChatGPT (via Copilot) sera le plus naturel à intégrer dans vos habitudes.",
+        "article.li2": "<strong>Vous êtes sur Google Workspace ?</strong> Gemini s'intègre sans effort dans Gmail, Docs et Sheets.",
+        "article.li3": "<strong>Vous traitez de longs documents (juridique, finance, rapports) ?</strong> Claude est le meilleur choix grâce à sa capacité d'analyse étendue.",
+        "article.li4": "<strong>La confidentialité est une priorité absolue ?</strong> Claude offre les meilleures garanties par défaut.",
+        "article.li5": "<strong>Vous voulez un maximum de flexibilité et de plugins ?</strong> ChatGPT a l'écosystème le plus riche.",
+        "article.li6": "<strong>Vous avez besoin d'informations en temps réel ?</strong> Gemini, connecté à la recherche Google, est imbattable.",
+        "article.h2_4": "Quelques conseils avant de se lancer",
+        "article.p_tips1": "<strong>Testez avant de payer.</strong> Les trois outils proposent des versions gratuites. Essayez-les pendant une ou deux semaines avec des cas d'usage réels de votre entreprise. La théorie ne remplace pas l'expérience.",
+        "article.p_tips2": "<strong>Pensez RGPD.</strong> Si votre entreprise est basée en Belgique ou en Europe, vérifiez que le fournisseur propose un accord de traitement des données (DPA) et, idéalement, un hébergement des données en Europe. N'entrez jamais de données personnelles dans les versions gratuites sans un cadre contractuel adapté.",
+        "article.p_tips3": "<strong>Définissez vos cas d'usage.</strong> « On veut utiliser l'IA » ne suffit pas. Identifiez 2 ou 3 tâches concrètes où l'IA peut vous faire gagner du temps : rédaction d'emails, résumé de réunions, analyse de données, service client... C'est en partant du concret que vous ferez le bon choix.",
+        "article.p_tips4": "<strong>Ne mettez pas tous vos œufs dans le même panier.</strong> Rien ne vous empêche d'utiliser plusieurs outils en parallèle. Claude pour l'analyse de contrats, ChatGPT pour le brainstorming, Gemini pour les emails... Choisissez le bon outil pour chaque tâche.",
+        "article.h2_5": "En résumé",
+        "article.p_conclusion": "ChatGPT, Claude et Gemini sont trois excellents outils, chacun avec ses forces. Le bon choix dépend de votre écosystème existant (Microsoft, Google ou autre), de vos besoins prioritaires (rédaction, analyse, intégration) et de votre sensibilité à la confidentialité. Le meilleur conseil ? Essayez-les. En quelques jours d'utilisation réelle, vous saurez lequel colle le mieux à votre manière de travailler."
+      },
+      en: {
+        "nav.services": "Services",
+        "nav.about": "About",
+        "nav.resources": "Resources",
+        "nav.contact": "Contact",
+        "footer.tagline": "Artificial Intelligence Consultant",
+        "footer.legal": "All rights reserved",
+        "article.readtime": "5 min read",
+        "article.tag": "Guide",
+        "article.title": "ChatGPT, Claude or Gemini: which one should your business choose?",
+        "article.back": "Back to resources",
+        "article.intro": "In 2026, AI assistants are everywhere. ChatGPT, Claude, Gemini... There's no shortage of options, but which one actually fits your business needs? Rather than getting lost in technical details, here's a clear, practical comparison to help you make the right choice.",
+        "article.h2_1": "The three heavyweights at a glance",
+        "article.h3_chatgpt": "ChatGPT (OpenAI)",
+        "article.p_chatgpt": "It's the most well-known. With over 200 million weekly active users, ChatGPT has become synonymous with AI for many people. Its strength? A massive ecosystem of plugins and integrations, and excellent integration with Microsoft tools (Word, Excel, Outlook) via Copilot. It's versatile: writing, analysis, coding, image generation... It does a bit of everything, and does it well.",
+        "article.h3_claude": "Claude (Anthropic)",
+        "article.p_claude": "Claude is the choice for those working with lengthy documents or needing nuanced, precise results. Its ability to process very long texts (up to one million 'tokens', equivalent to several hundred pages) is unmatched. It excels at writing, legal analysis, and programming. Another advantage: Anthropic doesn't reuse your data to train its models — a compelling argument for privacy-conscious businesses.",
+        "article.h3_gemini": "Gemini (Google)",
+        "article.p_gemini": "Gemini's strong suit is Google. If your company uses Google Workspace (Gmail, Docs, Sheets, Drive), Gemini integrates natively. It can analyse your emails, summarise your documents, and help with spreadsheets — all without leaving your work environment. It's also strong at real-time information retrieval, thanks to its direct access to the Google search engine.",
+        "article.h2_2": "Quick comparison",
+        "article.table.price": "Price (per user/month)",
+        "article.table.free": "Free version",
+        "article.table.yes1": "Yes", "article.table.yes2": "Yes", "article.table.yes3": "Yes",
+        "article.table.strength": "Key strength",
+        "article.table.str1": "Versatility, plugins",
+        "article.table.str2": "Long documents, precision",
+        "article.table.str3": "Google Workspace",
+        "article.table.ecosystem": "Ecosystem",
+        "article.table.privacy": "Privacy",
+        "article.table.priv1": "Good (paid version)",
+        "article.table.priv2": "Excellent",
+        "article.table.priv3": "Good (paid version)",
+        "article.table.french": "French language",
+        "article.table.fr1": "Very good", "article.table.fr2": "Very good", "article.table.fr3": "Good",
+        "article.h2_3": "Which tool for which situation?",
+        "article.p_situation_intro": "There's no single 'best' tool. It all depends on your context:",
+        "article.li1": "<strong>Using Microsoft 365?</strong> ChatGPT (via Copilot) will feel most natural to integrate into your workflow.",
+        "article.li2": "<strong>On Google Workspace?</strong> Gemini integrates effortlessly into Gmail, Docs and Sheets.",
+        "article.li3": "<strong>Processing long documents (legal, finance, reports)?</strong> Claude is the best choice thanks to its extended analysis capability.",
+        "article.li4": "<strong>Privacy is a top priority?</strong> Claude offers the best guarantees by default.",
+        "article.li5": "<strong>Want maximum flexibility and plugins?</strong> ChatGPT has the richest ecosystem.",
+        "article.li6": "<strong>Need real-time information?</strong> Gemini, connected to Google Search, is unbeatable.",
+        "article.h2_4": "A few tips before getting started",
+        "article.p_tips1": "<strong>Test before you pay.</strong> All three tools offer free versions. Try them for a week or two with real use cases from your business. Theory doesn't replace hands-on experience.",
+        "article.p_tips2": "<strong>Think GDPR.</strong> If your business is based in Belgium or Europe, check that the provider offers a Data Processing Agreement (DPA) and, ideally, European data hosting. Never enter personal data into free versions without a proper contractual framework.",
+        "article.p_tips3": "<strong>Define your use cases.</strong> 'We want to use AI' isn't enough. Identify 2 or 3 specific tasks where AI can save you time: drafting emails, summarising meetings, data analysis, customer service... Starting from concrete needs is how you'll make the right choice.",
+        "article.p_tips4": "<strong>Don't put all your eggs in one basket.</strong> Nothing stops you from using multiple tools in parallel. Claude for contract analysis, ChatGPT for brainstorming, Gemini for emails... Pick the right tool for each task.",
+        "article.h2_5": "In summary",
+        "article.p_conclusion": "ChatGPT, Claude and Gemini are three excellent tools, each with its strengths. The right choice depends on your existing ecosystem (Microsoft, Google, or other), your priority needs (writing, analysis, integration), and how much you value privacy. The best advice? Try them. After a few days of real use, you'll know which one fits your way of working best."
+      }
+    };
+
+    let currentLang = localStorage.getItem('empira-lang') || 'fr';
+
+    function setLang(lang) {
+      currentLang = lang;
+      localStorage.setItem('empira-lang', lang);
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) el.innerHTML = translations[lang][key];
+      });
+      // Update meta
+      if (lang === 'en') {
+        document.title = 'ChatGPT, Claude or Gemini: which one should your business choose? | EMPIRA';
+        document.querySelector('meta[name="description"]').content = 'Practical comparison between ChatGPT, Claude and Gemini for businesses. Pricing, strengths, weaknesses and advice to make the right choice.';
+      } else {
+        document.title = 'ChatGPT, Claude ou Gemini : lequel choisir pour votre entreprise ? | EMPIRA';
+        document.querySelector('meta[name="description"]').content = 'Comparatif pratique entre ChatGPT, Claude et Gemini pour les entreprises. Prix, forces, faiblesses et conseils pour faire le bon choix.';
+      }
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('lang-' + lang)?.classList.add('active');
+      document.getElementById('lang-' + lang + '-m')?.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      setLang(currentLang);
+    });
+  </script>
+</body>
+</html>
