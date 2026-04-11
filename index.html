@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMPIRA — Consultant IA à Bruxelles | Formation & Accompagnement Intelligence Artificielle</title>
+  <meta name="description" content="EMPIRA, votre spécialiste en intelligence artificielle à Bruxelles et Wallonie. Formations IA, accompagnement personnalisé, audit et stratégie IA pour entreprises et PME.">
+  <meta name="keywords" content="consultant IA Bruxelles, formation intelligence artificielle, accompagnement IA PME, spécialiste IA freelance, intégration IA entreprise, transformation digitale Belgique, ChatGPT entreprise, IA générative">
+  <meta name="author" content="EMPIRA SRL">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://empira.be/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EMPIRA — Consultant IA à Bruxelles">
+  <meta property="og:description" content="Formations, accompagnement et solutions en intelligence artificielle pour entreprises à Bruxelles et Wallonie.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://empira.be/">
+  <meta property="og:locale" content="fr_BE">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:site_name" content="EMPIRA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EMPIRA — Consultant IA à Bruxelles">
+  <meta name="twitter:description" content="Formations, accompagnement et solutions en intelligence artificielle pour entreprises.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              DEFAULT: '#a3891f',
+              light: '#c9a82a',
+              dark: '#4d410f',
+              50: 'rgba(163,137,31,0.1)',
+              100: 'rgba(163,137,31,0.2)',
+            },
+            dark: {
+              DEFAULT: '#161616',
+              light: '#1e1e1e',
+              lighter: '#2a2a2a',
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "EMPIRA",
+    "description": "Consultant en intelligence artificielle à Bruxelles. Formations IA, accompagnement personnalisé, audit et stratégie IA, développement de solutions IA pour entreprises.",
+    "url": "https://empira.be",
+    "email": "info@empira.be",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rixensart",
+      "addressRegion": "Wallonie",
+      "addressCountry": "BE"
+    },
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Bruxelles"
+      },
+      {
+        "@type": "Place",
+        "name": "Wallonie"
+      }
+    ],
+    "knowsAbout": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "IA générative",
+      "ChatGPT",
+      "Transformation digitale",
+      "Automatisation"
+    ],
+    "serviceType": [
+      "Formation en intelligence artificielle",
+      "Accompagnement IA",
+      "Audit et stratégie IA",
+      "Développement de solutions IA"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-dark text-white font-body antialiased">
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#hero" class="flex-shrink-0">
+          <span class="font-heading text-xl font-bold tracking-widest text-gold">EMPIRA</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+          <a href="#about" class="nav-link" data-i18n="nav.about">À propos</a>
+          <a href="#usecases" class="nav-link" data-i18n="nav.usecases">Cas d'usage</a>
+          <a href="#resources" class="nav-link" data-i18n="nav.resources">Ressources</a>
+          <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+
+          <!-- Language Switcher -->
+          <div class="flex items-center space-x-1 ml-4 border border-gold/30 rounded-full px-1 py-1">
+            <button id="lang-fr" class="lang-btn active" onclick="setLang('fr')">FR</button>
+            <button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+          </div>
+
+          <a href="#contact" class="btn-primary" data-i18n="nav.cta">Parlons IA</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center space-x-3">
+          <div class="flex items-center space-x-1 border border-gold/30 rounded-full px-1 py-1">
+            <button id="lang-fr-m" class="lang-btn active text-xs" onclick="setLang('fr')">FR</button>
+            <button id="lang-en-m" class="lang-btn text-xs" onclick="setLang('en')">EN</button>
+          </div>
+          <button id="mobile-toggle" class="text-white p-2" aria-label="Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-dark-light border-t border-gold/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+        <a href="#about" class="mobile-link" data-i18n="nav.about">À propos</a>
+        <a href="#usecases" class="mobile-link" data-i18n="nav.usecases">Cas d'usage</a>
+        <a href="#resources" class="mobile-link" data-i18n="nav.resources">Ressources</a>
+        <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
+        <a href="#contact" class="btn-primary block text-center mt-4" data-i18n="nav.cta">Parlons IA</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Animated background -->
+    <div class="hero-bg absolute inset-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/80 to-dark"></div>
+
+    <!-- Floating particles -->
+    <div class="particles absolute inset-0 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+      <div class="mb-6 inline-flex items-center px-4 py-2 rounded-full border border-gold/30 bg-gold-50">
+        <span class="w-2 h-2 bg-gold rounded-full mr-2 animate-pulse"></span>
+        <span class="text-gold text-sm font-medium" data-i18n="hero.badge">Consultant IA — Bruxelles & Wallonie</span>
+      </div>
+
+      <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <span data-i18n="hero.title1">Propulsez votre entreprise</span><br>
+        <span class="text-gold" data-i18n="hero.title2">grâce à l'intelligence artificielle</span>
+      </h1>
+
+      <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed" data-i18n="hero.subtitle">
+        Formations, accompagnement personnalisé et solutions IA sur mesure pour les entreprises qui veulent prendre le train de l'innovation.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="btn-primary text-lg px-8 py-4" data-i18n="hero.cta1">Discutons de votre projet</a>
+        <a href="#services" class="btn-secondary text-lg px-8 py-4" data-i18n="hero.cta2">Découvrir nos services</a>
+      </div>
+
+      <!-- Trust indicators -->
+      <div class="mt-16 flex flex-wrap justify-center gap-8 text-sm text-gray-500">
+        <div class="flex items-center gap-2">
+          <i data-lucide="building-2" class="w-4 h-4 text-gold"></i>
+          <span data-i18n="hero.trust1">PME & Grandes entreprises</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-gold"></i>
+          <span data-i18n="hero.trust2">Approche sur mesure</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="briefcase" class="w-4 h-4 text-gold"></i>
+          <span data-i18n="hero.trust3">BE-0717.662.913</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <i data-lucide="chevron-down" class="w-6 h-6 text-gold/50"></i>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-medium text-sm uppercase tracking-widest" data-i18n="services.label">Nos services</span>
+        <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6" data-i18n="services.title">L'IA au service de votre croissance</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-i18n="services.subtitle">Des solutions concrètes adaptées à votre niveau de maturité digitale, de la sensibilisation à l'implémentation.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Service 1 -->
+        <div class="service-card group">
+          <div class="service-icon">
+            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-heading text-xl font-semibold mb-3" data-i18n="services.s1.title">Formations IA</h3>
+          <p class="text-gray-400 mb-4" data-i18n="services.s1.desc">Formez vos équipes aux outils d'IA générative, au prompt engineering et aux bonnes pratiques. Ateliers pratiques adaptés à votre secteur d'activité.</p>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s1.f1">ChatGPT, Claude, Copilot pour les équipes</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s1.f2">Prompt engineering avancé</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s1.f3">Ateliers pratiques sur mesure</span></li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card group">
+          <div class="service-icon">
+            <i data-lucide="handshake" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-heading text-xl font-semibold mb-3" data-i18n="services.s2.title">Accompagnement personnalisé</h3>
+          <p class="text-gray-400 mb-4" data-i18n="services.s2.desc">Un suivi sur mesure pour intégrer l'IA dans vos processus métier. De l'identification des opportunités à la mise en production.</p>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s2.f1">Coaching individuel ou d'équipe</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s2.f2">Intégration dans vos workflows</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s2.f3">Suivi et optimisation continue</span></li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card group">
+          <div class="service-icon">
+            <i data-lucide="search" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-heading text-xl font-semibold mb-3" data-i18n="services.s3.title">Audit & Stratégie IA</h3>
+          <p class="text-gray-400 mb-4" data-i18n="services.s3.desc">Évaluez votre maturité IA et définissez une feuille de route claire. Identifiez les quick wins et les projets à fort impact pour votre organisation.</p>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s3.f1">Diagnostic de maturité digitale</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s3.f2">Roadmap IA personnalisée</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s3.f3">Analyse ROI des projets IA</span></li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card group">
+          <div class="service-icon">
+            <i data-lucide="code" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-heading text-xl font-semibold mb-3" data-i18n="services.s4.title">Développement de solutions IA</h3>
+          <p class="text-gray-400 mb-4" data-i18n="services.s4.desc">Conception et développement d'outils IA sur mesure : chatbots intelligents, automatisation de processus, analyse de données et bien plus.</p>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s4.f1">Chatbots & assistants virtuels</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s4.f2">Automatisation intelligente</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i><span data-i18n="services.s4.f3">Solutions sur mesure</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="py-24 bg-dark-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <span class="text-gold font-medium text-sm uppercase tracking-widest" data-i18n="about.label">À propos</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-4 mb-6" data-i18n="about.title">Votre partenaire IA de confiance</h2>
+        <p class="text-gray-400 mb-6 leading-relaxed text-lg" data-i18n="about.p1">
+          EMPIRA accompagne les entreprises belges dans leur transformation par l'intelligence artificielle. Nous intervenons dans toute la région de Bruxelles et de Wallonie.
+        </p>
+        <p class="text-gray-400 mb-10 leading-relaxed" data-i18n="about.p2">
+          Notre mission : démystifier l'IA et la rendre accessible à toutes les organisations, de la PME à la grande entreprise. Pas de jargon inutile, pas de promesses irréalistes — juste des résultats concrets et mesurables.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6 max-w-md mx-auto">
+          <div class="border-l-2 border-gold pl-4 text-left">
+            <div class="text-2xl font-heading font-bold text-gold" data-i18n="about.stat1.value">100%</div>
+            <div class="text-sm text-gray-500" data-i18n="about.stat1.label">Sur mesure</div>
+          </div>
+          <div class="border-l-2 border-gold pl-4 text-left">
+            <div class="text-2xl font-heading font-bold text-gold" data-i18n="about.stat2.value">Belgique</div>
+            <div class="text-sm text-gray-500" data-i18n="about.stat2.label">Bruxelles & Wallonie</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USE CASES ============ -->
+  <section id="usecases" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-medium text-sm uppercase tracking-widest" data-i18n="usecases.label">Cas d'usage</span>
+        <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6" data-i18n="usecases.title">L'IA concrètement dans votre entreprise</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-i18n="usecases.subtitle">Découvrez comment l'intelligence artificielle transforme les opérations quotidiennes de nos clients.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="usecase-card">
+          <i data-lucide="message-square-text" class="w-8 h-8 text-gold mb-4"></i>
+          <h3 class="font-heading font-semibold mb-2" data-i18n="usecases.uc1.title">Service client intelligent</h3>
+          <p class="text-gray-500 text-sm" data-i18n="usecases.uc1.desc">Chatbots IA qui répondent 24/7 à vos clients avec précision et empathie. Réduction du temps de réponse de 80%.</p>
+        </div>
+
+        <div class="usecase-card">
+          <i data-lucide="file-text" class="w-8 h-8 text-gold mb-4"></i>
+          <h3 class="font-heading font-semibold mb-2" data-i18n="usecases.uc2.title">Automatisation documentaire</h3>
+          <p class="text-gray-500 text-sm" data-i18n="usecases.uc2.desc">Extraction, classification et synthèse automatique de documents. Gagnez des heures de travail manuel chaque semaine.</p>
+        </div>
+
+        <div class="usecase-card">
+          <i data-lucide="bar-chart-3" class="w-8 h-8 text-gold mb-4"></i>
+          <h3 class="font-heading font-semibold mb-2" data-i18n="usecases.uc3.title">Analyse prédictive</h3>
+          <p class="text-gray-500 text-sm" data-i18n="usecases.uc3.desc">Anticipez les tendances, optimisez vos stocks et prédisez le comportement client grâce au machine learning.</p>
+        </div>
+
+        <div class="usecase-card">
+          <i data-lucide="pen-tool" class="w-8 h-8 text-gold mb-4"></i>
+          <h3 class="font-heading font-semibold mb-2" data-i18n="usecases.uc4.title">Création de contenu</h3>
+          <p class="text-gray-500 text-sm" data-i18n="usecases.uc4.desc">Génération de textes, emails marketing, rapports et présentations assistée par l'IA. Productivité multipliée.</p>
+        </div>
+
+        <div class="usecase-card">
+          <i data-lucide="workflow" class="w-8 h-8 text-gold mb-4"></i>
+          <h3 class="font-heading font-semibold mb-2" data-i18n="usecases.uc5.title">Optimisation des processus</h3>
+          <p class="text-gray-500 text-sm" data-i18n="usecases.uc5.desc">Identifiez les goulots d'étranglement et automatisez les tâches répétitives. Focus sur la valeur ajoutée.</p>
+        </div>
+
+        <div class="usecase-card">
+          <i data-lucide="database" class="w-8 h-8 text-gold mb-4"></i>
+          <h3 class="font-heading font-semibold mb-2" data-i18n="usecases.uc6.title">Exploitation des données</h3>
+          <p class="text-gray-500 text-sm" data-i18n="usecases.uc6.desc">Transformez vos données en insights actionnables. Tableaux de bord intelligents et reporting automatisé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY EMPIRA ============ -->
+  <section class="py-24 bg-dark-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-medium text-sm uppercase tracking-widest" data-i18n="why.label">Pourquoi EMPIRA</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-4 mb-6" data-i18n="why.title">Ce qui nous différencie</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-gold-50 border border-gold/30 flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="target" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-3" data-i18n="why.w1.title">Approche pragmatique</h3>
+          <p class="text-gray-500" data-i18n="why.w1.desc">Pas de buzzwords. Des solutions concrètes qui génèrent un ROI mesurable dès les premières semaines.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-gold-50 border border-gold/30 flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="users" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-3" data-i18n="why.w2.title">Proximité</h3>
+          <p class="text-gray-500" data-i18n="why.w2.desc">Nous privilégions le contact humain. Rencontres en personne, suivi régulier et réactivité.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-gold-50 border border-gold/30 flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="sparkles" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-3" data-i18n="why.w3.title">Expertise de pointe</h3>
+          <p class="text-gray-500" data-i18n="why.w3.desc">Veille technologique permanente sur les dernières avancées en IA. Toujours à la pointe de l'innovation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESOURCES / BLOG ============ -->
+  <section id="resources" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-medium text-sm uppercase tracking-widest" data-i18n="resources.label">Ressources</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-4 mb-6" data-i18n="resources.title">Apprenez et restez informé</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-i18n="resources.subtitle">Tutoriels, guides pratiques et actualités sur l'IA pour les entreprises.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="resource-card group">
+          <div class="h-48 bg-dark-lighter rounded-t-xl flex items-center justify-center">
+            <i data-lucide="book-open" class="w-12 h-12 text-gold/50 group-hover:text-gold transition-colors"></i>
+          </div>
+          <div class="p-6">
+            <span class="text-gold text-xs uppercase tracking-wider" data-i18n="resources.r1.tag">Guide</span>
+            <h3 class="font-heading font-semibold mt-2 mb-2 group-hover:text-gold transition-colors" data-i18n="resources.r1.title">Débuter avec l'IA en entreprise : le guide complet</h3>
+            <p class="text-gray-500 text-sm" data-i18n="resources.r1.desc">Les étapes essentielles pour lancer votre premier projet d'intelligence artificielle.</p>
+          </div>
+        </article>
+
+        <article class="resource-card group">
+          <div class="h-48 bg-dark-lighter rounded-t-xl flex items-center justify-center">
+            <i data-lucide="lightbulb" class="w-12 h-12 text-gold/50 group-hover:text-gold transition-colors"></i>
+          </div>
+          <div class="p-6">
+            <span class="text-gold text-xs uppercase tracking-wider" data-i18n="resources.r2.tag">Tutoriel</span>
+            <h3 class="font-heading font-semibold mt-2 mb-2 group-hover:text-gold transition-colors" data-i18n="resources.r2.title">10 prompts ChatGPT pour booster votre productivité</h3>
+            <p class="text-gray-500 text-sm" data-i18n="resources.r2.desc">Des techniques de prompt engineering directement applicables au quotidien.</p>
+          </div>
+        </article>
+
+        <article class="resource-card group">
+          <div class="h-48 bg-dark-lighter rounded-t-xl flex items-center justify-center">
+            <i data-lucide="trending-up" class="w-12 h-12 text-gold/50 group-hover:text-gold transition-colors"></i>
+          </div>
+          <div class="p-6">
+            <span class="text-gold text-xs uppercase tracking-wider" data-i18n="resources.r3.tag">Analyse</span>
+            <h3 class="font-heading font-semibold mt-2 mb-2 group-hover:text-gold transition-colors" data-i18n="resources.r3.title">L'IA en Belgique : état des lieux et perspectives 2025</h3>
+            <p class="text-gray-500 text-sm" data-i18n="resources.r3.desc">Où en sont les entreprises belges dans l'adoption de l'IA ? Chiffres clés et tendances.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <span class="text-gray-500 text-sm italic" data-i18n="resources.coming">Bientôt disponible — Articles et tutoriels en préparation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-gold/10 via-gold/5 to-gold/10"></div>
+    <div class="absolute inset-0 bg-dark/90"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold mb-6" data-i18n="cta.title">Prêt à intégrer l'IA dans votre entreprise ?</h2>
+      <p class="text-gray-400 text-lg mb-8" data-i18n="cta.subtitle">Parlons de vos défis et de comment l'IA peut y répondre.</p>
+      <a href="#contact" class="btn-primary text-lg px-10 py-4" data-i18n="cta.button">Planifier un appel découverte</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="py-24 bg-dark-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-medium text-sm uppercase tracking-widest" data-i18n="contact.label">Contact</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-4 mb-6" data-i18n="contact.title">Parlons de votre projet</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-i18n="contact.subtitle">Une question ? Un projet en tête ? Contactez-nous pour en discuter.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-12">
+        <!-- Contact Form -->
+        <div class="lg:col-span-3">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm text-gray-400 mb-2" data-i18n="contact.form.name">Nom</label>
+                <input type="text" name="name" required class="form-input" placeholder="Votre nom" data-i18n-placeholder="contact.form.name_ph">
+              </div>
+              <div>
+                <label class="block text-sm text-gray-400 mb-2" data-i18n="contact.form.email">Email</label>
+                <input type="email" name="email" required class="form-input" placeholder="votre@email.com">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-gray-400 mb-2" data-i18n="contact.form.company">Entreprise</label>
+              <input type="text" name="company" class="form-input" placeholder="Nom de votre entreprise" data-i18n-placeholder="contact.form.company_ph">
+            </div>
+            <div>
+              <label class="block text-sm text-gray-400 mb-2" data-i18n="contact.form.subject">Sujet</label>
+              <select name="subject" class="form-input">
+                <option value="formation" data-i18n="contact.form.opt1">Formation IA</option>
+                <option value="accompagnement" data-i18n="contact.form.opt2">Accompagnement personnalisé</option>
+                <option value="audit" data-i18n="contact.form.opt3">Audit & Stratégie IA</option>
+                <option value="dev" data-i18n="contact.form.opt4">Développement de solutions</option>
+                <option value="autre" data-i18n="contact.form.opt5">Autre</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm text-gray-400 mb-2" data-i18n="contact.form.message">Message</label>
+              <textarea name="message" rows="5" required class="form-input resize-none" placeholder="Décrivez votre projet ou votre besoin..." data-i18n-placeholder="contact.form.message_ph"></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full py-4 text-lg" data-i18n="contact.form.submit">Envoyer le message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="lg:col-span-2 space-y-8">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-lg bg-gold-50 border border-gold/20 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="mail" class="w-5 h-5 text-gold"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-semibold mb-1" data-i18n="contact.info.email">Email</h3>
+              <a href="mailto:info@empira.be" class="text-gold hover:text-gold-light transition-colors">info@empira.be</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-lg bg-gold-50 border border-gold/20 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="map-pin" class="w-5 h-5 text-gold"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-semibold mb-1" data-i18n="contact.info.location">Zone d'intervention</h3>
+              <p class="text-gray-400" data-i18n="contact.info.address">Bruxelles & Wallonie<br>Belgique</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-lg bg-gold-50 border border-gold/20 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="clock" class="w-5 h-5 text-gold"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-semibold mb-1" data-i18n="contact.info.hours_title">Disponibilité</h3>
+              <p class="text-gray-400" data-i18n="contact.info.hours">Lun — Ven : 9h00 — 18h00<br>Réponse sous 24h</p>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 rounded-xl bg-dark border border-gold/10">
+            <p class="text-sm text-gray-400 leading-relaxed" data-i18n="contact.info.note">
+              Prenez 30 minutes pour nous expliquer vos défis. Nous vous proposerons des pistes concrètes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark border-t border-gold/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div>
+          <span class="font-heading text-xl font-bold tracking-widest text-gold">EMPIRA</span>
+          <p class="text-gray-500 text-sm" data-i18n="footer.tagline">Consultant en intelligence artificielle</p>
+          <p class="text-gray-600 text-xs mt-2">BCE : BE-0717.662.913</p>
+        </div>
+
+        <div class="text-center">
+          <div class="flex justify-center space-x-6">
+            <a href="#services" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.services">Services</a>
+            <a href="#about" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.about">À propos</a>
+            <a href="#contact" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="text-right">
+          <p class="text-gray-600 text-sm">&copy; 2025 EMPIRA SRL</p>
+          <p class="text-gray-700 text-xs mt-1" data-i18n="footer.legal">Tous droits réservés</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
