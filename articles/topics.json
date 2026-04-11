@@ -1,0 +1,249 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title_fr": "ChatGPT, Claude, Gemini : lequel choisir pour votre entreprise ?",
+      "title_en": "ChatGPT, Claude, Gemini: which one should your business choose?",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "title_fr": "Microsoft Copilot dans Office 365 : ce que ça change concrètement au quotidien",
+      "title_en": "Microsoft Copilot in Office 365: what it actually changes day-to-day",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "title_fr": "Automatiser ses emails et son CRM avec Zapier + IA",
+      "title_en": "Automate your emails and CRM with Zapier + AI",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "title_fr": "Notion AI, Gamma, Tome : créer des documents et présentations en 5 minutes",
+      "title_en": "Notion AI, Gamma, Tome: create documents and presentations in 5 minutes",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "title_fr": "Les meilleurs outils IA gratuits pour une PME en 2025",
+      "title_en": "The best free AI tools for SMEs in 2025",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "title_fr": "Automatiser sa comptabilité et sa facturation avec l'IA",
+      "title_en": "Automate your accounting and invoicing with AI",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 7,
+      "title_fr": "Répondre aux appels d'offres 3x plus vite grâce à l'IA",
+      "title_en": "Respond to tenders 3x faster with AI",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 8,
+      "title_fr": "Rédiger ses posts LinkedIn et newsletters avec l'IA sans perdre sa voix",
+      "title_en": "Write LinkedIn posts and newsletters with AI without losing your voice",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 9,
+      "title_fr": "Mettre en place un chatbot FAQ sur son site en une journée",
+      "title_en": "Set up a FAQ chatbot on your website in one day",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 10,
+      "title_fr": "Trier et résumer ses emails automatiquement : guide pas à pas",
+      "title_en": "Sort and summarise your emails automatically: step-by-step guide",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 11,
+      "title_fr": "Recruter plus efficacement : screening de CV et rédaction d'offres avec l'IA",
+      "title_en": "Recruit more effectively: CV screening and job ad writing with AI",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 12,
+      "title_fr": "Traduire son site et ses documents avec l'IA : qualité vs coût",
+      "title_en": "Translate your website and documents with AI: quality vs cost",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 13,
+      "title_fr": "L'IA pour les dirigeants de PME : par où commencer ?",
+      "title_en": "AI for SME leaders: where to start?",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 14,
+      "title_fr": "10 tâches que vous pouvez déléguer à l'IA dès aujourd'hui",
+      "title_en": "10 tasks you can delegate to AI starting today",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 15,
+      "title_fr": "Les erreurs fréquentes quand on adopte l'IA en PME",
+      "title_en": "Common mistakes when adopting AI in SMEs",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 16,
+      "title_fr": "RGPD et IA : ce qu'une PME belge doit savoir",
+      "title_en": "GDPR and AI: what a Belgian SME needs to know",
+      "audience": "pme",
+      "status": "pending"
+    },
+    {
+      "id": 17,
+      "title_fr": "Construire une roadmap IA pour votre organisation",
+      "title_en": "Building an AI roadmap for your organisation",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 18,
+      "title_fr": "IA et gouvernance des données : les prérequis avant de se lancer",
+      "title_en": "AI and data governance: prerequisites before getting started",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 19,
+      "title_fr": "Build vs buy : quand développer sa propre solution IA ?",
+      "title_en": "Build vs buy: when to develop your own AI solution?",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 20,
+      "title_fr": "Mesurer le ROI d'un projet IA : méthodologie et pièges",
+      "title_en": "Measuring AI project ROI: methodology and pitfalls",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 21,
+      "title_fr": "RAG : connecter un LLM à vos données internes",
+      "title_en": "RAG: connecting an LLM to your internal data",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 22,
+      "title_fr": "Fine-tuning vs prompt engineering : quand et pourquoi ?",
+      "title_en": "Fine-tuning vs prompt engineering: when and why?",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 23,
+      "title_fr": "Déployer un assistant IA interne sécurisé",
+      "title_en": "Deploying a secure internal AI assistant",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 24,
+      "title_fr": "Automatiser le traitement documentaire à grande échelle avec l'IA",
+      "title_en": "Automating large-scale document processing with AI",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 25,
+      "title_fr": "Intégrer l'IA dans un ERP/CRM existant : approches et retours d'expérience",
+      "title_en": "Integrating AI into an existing ERP/CRM: approaches and lessons learned",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 26,
+      "title_fr": "Former ses équipes à l'IA : retour d'expérience et bonnes pratiques",
+      "title_en": "Training your teams on AI: experience and best practices",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 27,
+      "title_fr": "Gérer la résistance au changement face à l'IA",
+      "title_en": "Managing resistance to change in the face of AI",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 28,
+      "title_fr": "Créer un centre d'excellence IA dans son organisation",
+      "title_en": "Creating an AI centre of excellence in your organisation",
+      "audience": "enterprise",
+      "status": "pending"
+    },
+    {
+      "id": 29,
+      "title_fr": "Les modèles open source (LLaMA, Mistral) : une alternative crédible ?",
+      "title_en": "Open source models (LLaMA, Mistral): a credible alternative?",
+      "audience": "all",
+      "status": "pending"
+    },
+    {
+      "id": 30,
+      "title_fr": "Agents IA : qu'est-ce que c'est et pourquoi tout le monde en parle ?",
+      "title_en": "AI agents: what are they and why is everyone talking about them?",
+      "audience": "all",
+      "status": "pending"
+    },
+    {
+      "id": 31,
+      "title_fr": "L'IA en Belgique : acteurs, aides et écosystème",
+      "title_en": "AI in Belgium: players, funding and ecosystem",
+      "audience": "all",
+      "status": "pending"
+    },
+    {
+      "id": 32,
+      "title_fr": "Les tendances IA à suivre en 2025-2026",
+      "title_en": "AI trends to watch in 2025-2026",
+      "audience": "all",
+      "status": "pending"
+    },
+    {
+      "id": 33,
+      "title_fr": "Éthique et IA : les questions que chaque entreprise devrait se poser",
+      "title_en": "Ethics and AI: the questions every business should ask",
+      "audience": "all",
+      "status": "pending"
+    },
+    {
+      "id": 34,
+      "title_fr": "No-code + IA : automatiser sans développeur",
+      "title_en": "No-code + AI: automate without a developer",
+      "audience": "all",
+      "status": "pending"
+    },
+    {
+      "id": 35,
+      "title_fr": "Prompt engineering : le guide complet pour des résultats professionnels",
+      "title_en": "Prompt engineering: the complete guide for professional results",
+      "audience": "all",
+      "status": "pending"
+    }
+  ]
+}
