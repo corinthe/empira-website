@@ -49,7 +49,9 @@
       "title_fr": "Répondre aux appels d'offres 3x plus vite grâce à l'IA",
       "title_en": "Respond to tenders 3x faster with AI",
       "audience": "pme",
-      "status": "pending"
+      "status": "draft",
+      "draft_file": "articles/drafts/2026-05-02-repondre-appels-offres-ia.html",
+      "draft_date": "2026-05-02"
     },
     {
       "id": 8,

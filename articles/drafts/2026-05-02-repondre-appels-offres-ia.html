@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Répondre aux appels d'offres 3x plus vite grâce à l'IA : méthode et outils | EMPIRA</title>
+  <meta name="description" content="Comment les PME peuvent diviser par deux ou trois le temps consacré aux réponses aux marchés publics grâce à l'IA générative. Méthode concrète, outils testés et risques à connaître.">
+  <meta name="keywords" content="appels d'offres IA, marchés publics PME, réponse AO automatique, Loopio RFPIO Responsive, ChatGPT appels d'offres Belgique, bid writing AI">
+  <meta name="author" content="EMPIRA SRL">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://empira.be/articles/repondre-appels-offres-ia">
+
+  <meta property="og:title" content="Répondre aux appels d'offres 3x plus vite grâce à l'IA">
+  <meta property="og:description" content="Méthode concrète pour diviser par deux ou trois le temps de réponse aux marchés publics avec l'IA générative.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://empira.be/articles/repondre-appels-offres-ia">
+  <meta property="og:locale" content="fr_BE">
+  <meta property="og:site_name" content="EMPIRA">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Répondre aux appels d'offres 3x plus vite grâce à l'IA">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200">
+
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { DEFAULT: '#a3891f', light: '#c9a82a', dark: '#4d410f', 50: 'rgba(163,137,31,0.1)', 100: 'rgba(163,137,31,0.2)' },
+            dark: { DEFAULT: '#161616', light: '#1e1e1e', lighter: '#2a2a2a' }
+          },
+          fontFamily: { heading: ['Montserrat', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    ::selection { background: rgba(163,137,31,0.3); color: #fff; }
+    .nav-link { color: rgba(255,255,255,0.7); font-size: 0.875rem; font-weight: 500; transition: color 0.2s; text-decoration: none; }
+    .nav-link:hover { color: #a3891f; }
+    .lang-btn { padding: 0.25rem 0.625rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.5); transition: all 0.2s; background: transparent; border: none; cursor: pointer; }
+    .lang-btn.active { background: #a3891f; color: #161616; }
+    .lang-btn:hover:not(.active) { color: #a3891f; }
+    .article-content h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(163,137,31,0.2); }
+    .article-content h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 600; color: #a3891f; margin-top: 1.75rem; margin-bottom: 0.75rem; }
+    .article-content p { color: rgba(255,255,255,0.75); line-height: 1.85; margin-bottom: 1.25rem; }
+    .article-content ul { list-style: none; padding: 0; margin-bottom: 1.25rem; }
+    .article-content li { color: rgba(255,255,255,0.7); padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; line-height: 1.7; }
+    .article-content li::before { content: ''; position: absolute; left: 0; top: 0.7rem; width: 6px; height: 6px; background: #a3891f; border-radius: 50%; }
+    .article-content strong { color: #fff; font-weight: 600; }
+    .article-content a { color: #a3891f; text-decoration: underline; text-underline-offset: 2px; }
+    .article-content a:hover { color: #c9a82a; }
+    .quote-block { border-left: 3px solid #a3891f; padding: 1rem 1.5rem; margin: 1.5rem 0; background: rgba(163,137,31,0.05); border-radius: 0 0.5rem 0.5rem 0; }
+    .quote-block p { color: rgba(255,255,255,0.8); font-style: italic; margin-bottom: 0.5rem; }
+    .quote-block cite { color: #a3891f; font-size: 0.85rem; font-style: normal; }
+    .step-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(163,137,31,0.15); border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+    .step-card .step-num { display: inline-flex; align-items: center; justify-content: center; width: 1.75rem; height: 1.75rem; background: #a3891f; color: #161616; border-radius: 50%; font-size: 0.8rem; font-weight: 700; margin-right: 0.75rem; flex-shrink: 0; }
+    .step-card .step-header { display: flex; align-items: center; margin-bottom: 0.5rem; }
+    .step-card .step-title { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.95rem; }
+    .step-card p { margin-bottom: 0; font-size: 0.9rem; }
+    .time-badge { display: inline-block; background: rgba(163,137,31,0.15); color: #a3891f; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 9999px; margin-left: 0.5rem; vertical-align: middle; }
+    .source-ref { color: rgba(255,255,255,0.4); font-size: 0.75rem; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #161616; }
+    ::-webkit-scrollbar-thumb { background: rgba(163,137,31,0.3); border-radius: 4px; }
+  </style>
+</head>
+<body class="bg-dark text-white font-body antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur-sm border-b border-gold/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="../../index.html" class="flex-shrink-0">
+          <span class="font-heading text-xl font-bold tracking-widest text-gold">EMPIRA</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../../index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
+          <a href="../../index.html#about" class="nav-link" data-i18n="nav.about">À propos</a>
+          <a href="../../index.html#resources" class="nav-link" data-i18n="nav.resources">Ressources</a>
+          <a href="../../index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+          <div class="flex items-center space-x-1 ml-4 border border-gold/30 rounded-full px-1 py-1">
+            <button id="lang-fr" class="lang-btn active" onclick="setLang('fr')">FR</button>
+            <button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+          </div>
+        </div>
+        <div class="md:hidden flex items-center space-x-3">
+          <div class="flex items-center space-x-1 border border-gold/30 rounded-full px-1 py-1">
+            <button class="lang-btn active text-xs" id="lang-fr-m" onclick="setLang('fr')">FR</button>
+            <button class="lang-btn text-xs" id="lang-en-m" onclick="setLang('en')">EN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO IMAGE -->
+  <div class="pt-20">
+    <div class="w-full h-64 sm:h-80 md:h-96 relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80" alt="Signature de documents contractuels — appels d'offres et marchés publics" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-b from-dark/30 via-dark/50 to-dark"></div>
+    </div>
+  </div>
+
+  <!-- ARTICLE -->
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 -mt-20 relative z-10 pb-20">
+    <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+      <span class="flex items-center gap-1.5">
+        <i data-lucide="calendar" class="w-4 h-4"></i>
+        <span data-i18n="article.date">2 mai 2026</span>
+      </span>
+      <span class="flex items-center gap-1.5">
+        <i data-lucide="clock" class="w-4 h-4"></i>
+        <span data-i18n="article.readtime">6 min de lecture</span>
+      </span>
+      <span class="inline-block px-2.5 py-0.5 rounded-full bg-gold-50 text-gold text-xs font-medium" data-i18n="article.tag">Guide pratique</span>
+    </div>
+
+    <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight" data-i18n="article.title">
+      Répondre aux appels d'offres 3x plus vite grâce à l'IA : méthode et outils pour les PME
+    </h1>
+
+    <div class="article-content">
+
+      <p data-i18n="article.intro">
+        En Europe, les marchés publics représentent environ 14% du PIB — près de 2 000 milliards d'euros par an. En Belgique seule, c'est plus de 50 milliards d'euros de contrats publiés chaque année sur des plateformes comme e-Procurement et TED (Tenders Electronic Daily). Et pourtant, des dizaines de PME renoncent chaque semaine à répondre à des appels d'offres qu'elles auraient pu remporter. Pas parce qu'elles ne sont pas compétentes — mais parce qu'une réponse complète mobilise en moyenne 25 à 40 heures de travail. Avec les mêmes équipes, les mêmes ressources, l'IA peut changer radicalement ce calcul.
+      </p>
+
+      <h2 data-i18n="article.h2_1">Le vrai problème n'est pas le taux de succès, c'est le volume</h2>
+
+      <p data-i18n="article.p1_1">
+        Les grandes entreprises disposent d'équipes de <em>bid managers</em> dédiés — des professionnels dont le seul travail est de répondre aux appels d'offres. Les PME, elles, confient cette tâche à un commercial ou directement au dirigeant, entre deux rendez-vous clients et une réunion d'équipe. Résultat : une PME typique ne peut répondre qu'à 3 ou 4 dossiers par trimestre, là où elle pourrait en traiter 10 à 15.
+      </p>
+
+      <p data-i18n="article.p1_2">
+        L'APMP (Association of Proposal Management Professionals), qui fédère les experts mondiaux de la réponse aux appels d'offres, révèle dans ses enquêtes annuelles que <strong>72% des professionnels du secteur estiment manquer de temps pour répondre à tous les dossiers pertinents</strong>. Et ce sont des équipes dédiées. Pour une PME sans département bid management, le problème est structurellement encore plus sévère.
+      </p>
+
+      <p data-i18n="article.p1_3">
+        Ce qui est contre-intuitif, c'est que la variable décisive n'est pas forcément votre taux de succès — c'est votre volume de réponses. Une PME qui passe de 4 à 12 réponses par trimestre avec un taux de succès stable de 25% triple mécaniquement son nombre de contrats remportés. L'IA ne va pas améliorer votre offre technique — elle va vous permettre de déposer plus d'offres.
+      </p>
+
+      <h2 data-i18n="article.h2_2">Ce que l'IA gère vraiment bien dans un dossier d'appel d'offres</h2>
+
+      <p data-i18n="article.p2_intro">
+        Une réponse à appel d'offres n'est pas un document monolithique. Elle se compose de sections très différentes, certaines hautement stratégiques, d'autres profondément répétitives. C'est sur ces dernières que l'IA est imbattable :
+      </p>
+
+      <ul data-i18n="article.list2">
+        <li><strong>Analyse du cahier des charges :</strong> extraire automatiquement les critères d'évaluation, leurs pondérations, les documents obligatoires, les délais et les clauses particulières d'un document de 80 pages. Ce qui prend 3 heures à un humain prend 5 minutes à un LLM.</li>
+        <li><strong>Matrice de conformité :</strong> vérifier systématiquement que chaque exigence du cahier des charges est adressée dans votre réponse — une tâche d'une précision mécanique que les humains fatigués ratent régulièrement.</li>
+        <li><strong>Réponses aux questions standard :</strong> dans tout appel d'offres, 40 à 60% des questions sont récurrentes ("décrivez votre politique qualité", "présentez vos références", "détaillez votre organisation"). Si vous avez répondu à ces questions une fois, l'IA peut les adapter en quelques secondes.</li>
+        <li><strong>Synthèse exécutive :</strong> rédiger le résumé de votre offre — souvent la seule partie que lit le comité d'évaluation en premier — de manière claire, structurée et percutante.</li>
+        <li><strong>Reformulation et cohérence :</strong> transformer un texte technique brut en prose professionnelle, uniformiser le registre stylistique sur tout le document.</li>
+        <li><strong>Traduction :</strong> en Belgique, les marchés wallons sont en français, les marchés flamands en néerlandais, les marchés fédéraux parfois en anglais. L'IA traduit en quelques minutes avec une qualité nettement supérieure aux outils automatiques classiques.</li>
+      </ul>
+
+      <div class="quote-block" data-i18n="article.quote1">
+        <p>« Sur nos dossiers les plus volumineux, on passait facilement 35 à 40 heures. Aujourd'hui, avec une base documentaire bien construite et ChatGPT Enterprise, on est à 12-15 heures. Et les dossiers sont objectivement meilleurs — plus cohérents, mieux rédigés. »</p>
+        <cite>— Témoignage d'un directeur commercial, PME de services IT, Liège (2025)</cite>
+      </div>
+
+      <h2 data-i18n="article.h2_3">Les outils : deux familles très différentes</h2>
+
+      <h3 data-i18n="article.h3_specialized">Outils spécialisés en réponse aux appels d'offres</h3>
+
+      <p data-i18n="article.p3_specialized">
+        Ces plateformes combinent une bibliothèque de réponses validées (votre "contenu maison") avec un moteur IA qui complète automatiquement les nouveaux dossiers à partir de cette base. Elles sont conçues pour les équipes qui traitent des volumes importants :
+      </p>
+
+      <ul data-i18n="article.list3_specialized">
+        <li><strong>Responsive</strong> (ex-RFPIO, leader du marché enterprise) : les clients déclarent une réduction de 40% du temps de réponse. Interface RFP dédiée, intégrations Salesforce/HubSpot, tarification sur devis.</li>
+        <li><strong>Loopio</strong> : concurrent direct, très utilisé en Amérique du Nord. Les utilisateurs rapportent des réponses produites 2,5x plus vite en moyenne. Plus accessible que Responsive pour les PME en croissance.</li>
+        <li><strong>Tomorro</strong> : solution française, architecture RGPD-native, bien adaptée au contexte européen. Plus orientée contrats et documents juridiques, mais couvre bien le périmètre des marchés publics.</li>
+      </ul>
+
+      <h3 data-i18n="article.h3_llm">LLM généralistes : l'option accessible pour les PME</h3>
+
+      <p data-i18n="article.p3_llm">
+        Les outils spécialisés coûtent plusieurs milliers d'euros par an. Pour la majorité des PME belges, la combinaison <strong>Claude Pro</strong> ou <strong>ChatGPT Enterprise</strong> avec une base documentaire bien organisée couvre 70 à 80% du bénéfice pour 5 à 10% du coût. La clé : construire des prompts structurés et une bibliothèque de réponses validées que vous alimentez progressivement après chaque dossier.
+      </p>
+
+      <p data-i18n="article.p3_llm2">
+        Claude est particulièrement adapté aux longs documents grâce à sa fenêtre de contexte de 200 000 tokens — soit environ 150 000 mots, l'équivalent d'un roman entier. Vous pouvez lui donner le cahier des charges complet et vos réponses de référence en une seule fois, sans découpage.
+      </p>
+
+      <h2 data-i18n="article.h2_4">La méthode concrète : 4 étapes pour une réponse assistée par IA</h2>
+
+      <div class="step-card">
+        <div class="step-header">
+          <span class="step-num">1</span>
+          <span class="step-title" data-i18n="article.step1_title">Analyse du cahier des charges <span class="time-badge">30 min → 5 min</span></span>
+        </div>
+        <p data-i18n="article.step1_body">Importez le cahier des charges complet dans votre LLM et demandez-lui d'extraire : les critères d'évaluation et leurs pondérations, les exigences techniques obligatoires, la liste des documents à fournir, les délais, et les éventuelles clauses rédhibitoires. Vous obtenez en 5 minutes une synthèse structurée qui remplace 2 à 3 heures de lecture attentive.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <span class="step-num">2</span>
+          <span class="step-title" data-i18n="article.step2_title">Génération du premier jet <span class="time-badge">3 jours → quelques heures</span></span>
+        </div>
+        <p data-i18n="article.step2_body">Fournissez à l'IA votre base documentaire : plaquette commerciale, fiches de références clients, certifications, organigramme, politique qualité. Demandez-lui de rédiger chaque section de la réponse en respectant la structure imposée par le cahier des charges. Commencez par les sections standard — elles représentent souvent 60% du volume à rédiger.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <span class="step-num">3</span>
+          <span class="step-title" data-i18n="article.step3_title">Personnalisation stratégique <span class="time-badge">étape humaine non négociable</span></span>
+        </div>
+        <p data-i18n="article.step3_body">C'est la seule étape que l'IA ne peut pas faire à votre place. Pourquoi vous, pourquoi maintenant, quelle est votre valeur ajoutée spécifique pour ce marché particulier, quel angle différenciant allez-vous adopter face à vos concurrents présumés ? Cette analyse stratégique reste humaine — mais vous arrivez avec un brouillon complet, pas une page blanche. C'est là que vous récupérez votre temps pour réfléchir vraiment.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <span class="step-num">4</span>
+          <span class="step-title" data-i18n="article.step4_title">Vérification de conformité finale <span class="time-badge">2h → 20 min</span></span>
+        </div>
+        <p data-i18n="article.step4_body">Avant dépôt, demandez à l'IA de relire votre dossier complet en le comparant point par point au cahier des charges. Elle détecte les oublis et les incohérences avec une rigueur mécanique qu'un humain épuisé à 23h la veille de la date limite ne peut pas garantir. Soumettez également la liste des pièces jointes pour vérification.</p>
+      </div>
+
+      <h2 data-i18n="article.h2_5">Trois risques à ne pas ignorer</h2>
+
+      <p data-i18n="article.p5_intro">
+        Le gain est réel — mais il ne se fait pas sans précautions. Trois points de vigilance s'imposent :
+      </p>
+
+      <h3 data-i18n="article.h3_risk1">La confidentialité des données commerciales</h3>
+      <p data-i18n="article.p5_risk1">
+        Ne soumettez jamais des données clients, des prix, des marges ou des informations commerciales sensibles dans l'interface grand public de ChatGPT.com ou Claude.ai. Ces données peuvent être utilisées pour l'entraînement des modèles. Utilisez impérativement des versions <strong>Enterprise avec DPA (accord de traitement des données)</strong> — ChatGPT Enterprise, Claude for Business, ou des solutions hébergées sur Azure OpenAI avec isolation de données. En Belgique, tout traitement de données personnelles dans un outil IA est soumis au RGPD.
+      </p>
+
+      <h3 data-i18n="article.h3_risk2">Les hallucinations et erreurs factuelles</h3>
+      <p data-i18n="article.p5_risk2">
+        Les LLM peuvent inventer des références clients qui n'existent pas, gonfler des chiffres ou citer des certifications que vous ne possédez pas. Dans un appel d'offres public, une fausse déclaration expose à l'exclusion de la procédure et potentiellement à des poursuites. <strong>Toute section générée par IA doit être relue et validée par un humain</strong>, sans exception. L'IA est un accélérateur, pas un signataire.
+      </p>
+
+      <h3 data-i18n="article.h3_risk3">L'uniformisation des réponses</h3>
+      <p data-i18n="article.p5_risk3">
+        Les acheteurs publics qui évaluent des dizaines de dossiers commencent à détecter les réponses générées par IA — même style, mêmes formulations, même structure. Si toutes les PME utilisent les mêmes outils avec les mêmes prompts, la différenciation disparaît. L'IA doit nourrir votre réponse, pas la produire en pilote automatique. Soignez particulièrement l'introduction et la conclusion : ce sont les sections les plus lues et les plus mémorisées par les évaluateurs.
+      </p>
+
+      <h2 data-i18n="article.h2_6">Ce que cela change vraiment pour une PME belge</h2>
+
+      <p data-i18n="article.p6_1">
+        Soyons précis sur les ordres de grandeur. Sur les parties répétitives et structurées d'un dossier, le gain de temps est réel et documenté : <strong>50 à 70% de réduction</strong> selon les retours d'utilisateurs et les études des éditeurs spécialisés. Une réponse qui mobilisait 30 heures en prend désormais 10 à 15. Mais ce gain n'est pas uniforme : l'analyse stratégique et la personnalisation restent entières. L'IA ne compresse pas votre temps de réflexion — elle élimine le temps d'exécution mécanique.
+      </p>
+
+      <p data-i18n="article.p6_2">
+        Pour une PME belge, cela se traduit concrètement par la possibilité de répondre à des marchés auxquels elle renonçait faute de bande passante — les marchés flamands (nécessitant une traduction), les dossiers techniques volumineux, les lots secondaires d'un marché qu'elle aurait autrement ignorés. La plateforme e-Procurement publie plus de 40 000 avis de marché par an en Belgique. La plupart des PME n'en explorent qu'une fraction minuscule.
+      </p>
+
+      <p data-i18n="article.p6_3">
+        L'enjeu n'est pas de remplacer un bid manager que vous n'avez pas — c'est de rendre possible, pour la première fois, une stratégie systématique de réponse aux marchés publics, avec les ressources d'une PME.
+      </p>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-10 pt-6 border-t border-gold/10">
+      <h3 class="font-heading text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider" data-i18n="article.sources_title">Sources</h3>
+      <ul class="space-y-1 text-xs text-gray-600">
+        <li>Commission européenne, <em>Public Procurement — Annual Statistics</em>, 2024</li>
+        <li>Loopio / APMP, <em>6th Annual RFP Trends &amp; Benchmarks Report</em>, 2025 — loopio.com</li>
+        <li>QorusDocs, <em>9th Annual Proposal Management Benchmark Survey</em>, janvier 2025</li>
+        <li>McKinsey &amp; Company, <em>Redefining procurement performance in the era of agentic AI</em>, octobre 2025</li>
+        <li>Lohfeld Consulting, <em>Three Years of AI — What the Results Really Show</em>, février 2026</li>
+        <li>Gartner, <em>Predicts 2026: AI Transforms IT Sourcing, Procurement and Vendor Management</em>, 2025</li>
+        <li>Deloitte, <em>2025 Global Chief Procurement Officer Survey</em></li>
+        <li>Service Public Fédéral Belge, e-Procurement — <em>Statistiques des marchés publics 2024</em></li>
+        <li>Publications Office of the EU, <em>TED (Tenders Electronic Daily)</em></li>
+      </ul>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-gold/10">
+      <a href="../../index.html#resources" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span data-i18n="article.back">Retour aux ressources</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark border-t border-gold/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div>
+          <span class="font-heading text-xl font-bold tracking-widest text-gold">EMPIRA</span>
+          <p class="text-gray-500 text-sm mt-4" data-i18n="footer.tagline">Consultant en intelligence artificielle</p>
+          <p class="text-gray-600 text-xs mt-2">BCE : BE-0717.662.913</p>
+        </div>
+        <div class="text-center">
+          <div class="flex justify-center space-x-6">
+            <a href="../../index.html#services" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.services">Services</a>
+            <a href="../../index.html#about" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.about">À propos</a>
+            <a href="../../index.html#contact" class="text-gray-500 hover:text-gold transition-colors text-sm" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-gray-600 text-sm">&copy; 2026 EMPIRA SRL</p>
+          <p class="text-gray-700 text-xs mt-1" data-i18n="footer.legal">Tous droits réservés</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      fr: {
+        "nav.services": "Services", "nav.about": "À propos", "nav.resources": "Ressources", "nav.contact": "Contact",
+        "footer.tagline": "Consultant en intelligence artificielle", "footer.legal": "Tous droits réservés",
+        "article.date": "2 mai 2026",
+        "article.readtime": "6 min de lecture", "article.tag": "Guide pratique",
+        "article.title": "Répondre aux appels d'offres 3x plus vite grâce à l'IA : méthode et outils pour les PME",
+        "article.back": "Retour aux ressources",
+        "article.sources_title": "Sources",
+
+        "article.intro": "En Europe, les marchés publics représentent environ 14% du PIB — près de 2 000 milliards d'euros par an. En Belgique seule, c'est plus de 50 milliards d'euros de contrats publiés chaque année sur des plateformes comme e-Procurement et TED (Tenders Electronic Daily). Et pourtant, des dizaines de PME renoncent chaque semaine à répondre à des appels d'offres qu'elles auraient pu remporter. Pas parce qu'elles ne sont pas compétentes — mais parce qu'une réponse complète mobilise en moyenne 25 à 40 heures de travail. Avec les mêmes équipes, les mêmes ressources, l'IA peut changer radicalement ce calcul.",
+
+        "article.h2_1": "Le vrai problème n'est pas le taux de succès, c'est le volume",
+        "article.p1_1": "Les grandes entreprises disposent d'équipes de <em>bid managers</em> dédiés — des professionnels dont le seul travail est de répondre aux appels d'offres. Les PME, elles, confient cette tâche à un commercial ou directement au dirigeant, entre deux rendez-vous clients et une réunion d'équipe. Résultat : une PME typique ne peut répondre qu'à 3 ou 4 dossiers par trimestre, là où elle pourrait en traiter 10 à 15.",
+        "article.p1_2": "Le 6e rapport annuel Loopio/APMP (2025), qui agrège les données de plus de 1 500 entreprises mondiales, dresse un portrait frappant : <strong>l'adoption de l'IA dans les équipes de réponse aux appels d'offres a doublé en un an, passant de 34% à 68%</strong>. Et pourtant, le problème de temps persiste : 72% des professionnels estiment encore ne pas disposer du temps nécessaire pour répondre à tous les dossiers pertinents. Si des équipes entièrement dédiées à cette activité sont débordées, que dire d'un dirigeant de PME qui gère cela entre deux réunions clients ?",
+        "article.p1_3": "Ce qui est contre-intuitif, c'est que la variable décisive n'est pas forcément votre taux de succès — c'est votre volume de réponses. Une PME qui passe de 4 à 12 réponses par trimestre avec un taux de succès stable de 25% triple mécaniquement son nombre de contrats remportés. L'IA ne va pas améliorer votre offre technique — elle va vous permettre de déposer plus d'offres.",
+
+        "article.h2_2": "Ce que l'IA gère vraiment bien dans un dossier d'appel d'offres",
+        "article.p2_intro": "Une réponse à appel d'offres n'est pas un document monolithique. Elle se compose de sections très différentes, certaines hautement stratégiques, d'autres profondément répétitives. C'est sur ces dernières que l'IA est imbattable :",
+        "article.list2": '<li><strong>Analyse du cahier des charges :</strong> extraire automatiquement les critères d\'évaluation, leurs pondérations, les documents obligatoires, les délais et les clauses particulières d\'un document de 80 pages. Ce qui prend 3 heures à un humain prend 5 minutes à un LLM.</li><li><strong>Matrice de conformité :</strong> vérifier systématiquement que chaque exigence du cahier des charges est adressée dans votre réponse — une tâche d\'une précision mécanique que les humains fatigués ratent régulièrement.</li><li><strong>Réponses aux questions standard :</strong> dans tout appel d\'offres, 40 à 60% des questions sont récurrentes ("décrivez votre politique qualité", "présentez vos références", "détaillez votre organisation"). Si vous avez répondu à ces questions une fois, l\'IA peut les adapter en quelques secondes.</li><li><strong>Synthèse exécutive :</strong> rédiger le résumé de votre offre — souvent la seule partie que lit le comité d\'évaluation en premier — de manière claire, structurée et percutante.</li><li><strong>Reformulation et cohérence :</strong> transformer un texte technique brut en prose professionnelle, uniformiser le registre stylistique sur tout le document.</li><li><strong>Traduction :</strong> en Belgique, les marchés wallons sont en français, les marchés flamands en néerlandais, les marchés fédéraux parfois en anglais. L\'IA traduit en quelques minutes avec une qualité nettement supérieure aux outils automatiques classiques.</li>',
+        "article.quote1": '<p>« Sur nos dossiers les plus volumineux, on passait facilement 35 à 40 heures. Aujourd\'hui, avec une base documentaire bien construite et ChatGPT Enterprise, on est à 12-15 heures. Et les dossiers sont objectivement meilleurs — plus cohérents, mieux rédigés. »</p><cite>— Témoignage d\'un directeur commercial, PME de services IT, Liège (2025)</cite>',
+
+        "article.h2_3": "Les outils : deux familles très différentes",
+        "article.h3_specialized": "Outils spécialisés en réponse aux appels d'offres",
+        "article.p3_specialized": "Ces plateformes combinent une bibliothèque de réponses validées (votre \"contenu maison\") avec un moteur IA qui complète automatiquement les nouveaux dossiers à partir de cette base. Elles sont conçues pour les équipes qui traitent des volumes importants :",
+        "article.list3_specialized": '<li><strong>Responsive</strong> (ex-RFPIO, leader du marché enterprise) : les clients déclarent une réduction de 40% du temps de réponse. Interface RFP dédiée, intégrations Salesforce/HubSpot, tarification sur devis.</li><li><strong>Loopio</strong> : concurrent direct, très utilisé en Amérique du Nord. Les utilisateurs rapportent des réponses produites 2,5x plus vite en moyenne. Plus accessible que Responsive pour les PME en croissance.</li><li><strong>Tomorro</strong> : solution française, architecture RGPD-native, bien adaptée au contexte européen. Plus orientée contrats et documents juridiques, mais couvre bien le périmètre des marchés publics.</li>',
+        "article.h3_llm": "LLM généralistes : l'option accessible pour les PME",
+        "article.p3_llm": "Les outils spécialisés coûtent plusieurs milliers d'euros par an. Pour la majorité des PME belges, la combinaison <strong>Claude Pro</strong> ou <strong>ChatGPT Enterprise</strong> avec une base documentaire bien organisée couvre 70 à 80% du bénéfice pour 5 à 10% du coût. La clé : construire des prompts structurés et une bibliothèque de réponses validées que vous alimentez progressivement après chaque dossier.",
+        "article.p3_llm2": "Claude est particulièrement adapté aux longs documents grâce à sa fenêtre de contexte de 200 000 tokens — soit environ 150 000 mots, l'équivalent d'un roman entier. Vous pouvez lui donner le cahier des charges complet et vos réponses de référence en une seule fois, sans découpage.",
+
+        "article.h2_4": "La méthode concrète : 4 étapes pour une réponse assistée par IA",
+        "article.step1_title": 'Analyse du cahier des charges <span class="time-badge">30 min → 5 min</span>',
+        "article.step1_body": "Importez le cahier des charges complet dans votre LLM et demandez-lui d'extraire : les critères d'évaluation et leurs pondérations, les exigences techniques obligatoires, la liste des documents à fournir, les délais, et les éventuelles clauses rédhibitoires. Vous obtenez en 5 minutes une synthèse structurée qui remplace 2 à 3 heures de lecture attentive.",
+        "article.step2_title": 'Génération du premier jet <span class="time-badge">3 jours → quelques heures</span>',
+        "article.step2_body": "Fournissez à l'IA votre base documentaire : plaquette commerciale, fiches de références clients, certifications, organigramme, politique qualité. Demandez-lui de rédiger chaque section de la réponse en respectant la structure imposée par le cahier des charges. Commencez par les sections standard — elles représentent souvent 60% du volume à rédiger.",
+        "article.step3_title": 'Personnalisation stratégique <span class="time-badge">étape humaine non négociable</span>',
+        "article.step3_body": "C'est la seule étape que l'IA ne peut pas faire à votre place. Pourquoi vous, pourquoi maintenant, quelle est votre valeur ajoutée spécifique pour ce marché particulier, quel angle différenciant allez-vous adopter face à vos concurrents présumés ? Cette analyse stratégique reste humaine — mais vous arrivez avec un brouillon complet, pas une page blanche. C'est là que vous récupérez votre temps pour réfléchir vraiment.",
+        "article.step4_title": 'Vérification de conformité finale <span class="time-badge">2h → 20 min</span>',
+        "article.step4_body": "Avant dépôt, demandez à l'IA de relire votre dossier complet en le comparant point par point au cahier des charges. Elle détecte les oublis et les incohérences avec une rigueur mécanique qu'un humain épuisé à 23h la veille de la date limite ne peut pas garantir. Soumettez également la liste des pièces jointes pour vérification.",
+
+        "article.h2_5": "Trois risques à ne pas ignorer",
+        "article.p5_intro": "Le gain est réel — mais il ne se fait pas sans précautions. Trois points de vigilance s'imposent :",
+        "article.h3_risk1": "La confidentialité des données commerciales",
+        "article.p5_risk1": "Ne soumettez jamais des données clients, des prix, des marges ou des informations commerciales sensibles dans l'interface grand public de ChatGPT.com ou Claude.ai. Ces données peuvent être utilisées pour l'entraînement des modèles. Utilisez impérativement des versions <strong>Enterprise avec DPA (accord de traitement des données)</strong> — ChatGPT Enterprise, Claude for Business, ou des solutions hébergées sur Azure OpenAI avec isolation de données. En Belgique, tout traitement de données personnelles dans un outil IA est soumis au RGPD.",
+        "article.h3_risk2": "Les hallucinations et erreurs factuelles",
+        "article.p5_risk2": "Les LLM peuvent inventer des références clients qui n'existent pas, gonfler des chiffres ou citer des certifications que vous ne possédez pas. Dans un appel d'offres public, une fausse déclaration expose à l'exclusion de la procédure et potentiellement à des poursuites. <strong>Toute section générée par IA doit être relue et validée par un humain</strong>, sans exception. L'IA est un accélérateur, pas un signataire.",
+        "article.h3_risk3": "L'uniformisation des réponses",
+        "article.p5_risk3": "Les acheteurs publics qui évaluent des dizaines de dossiers commencent à détecter les réponses générées par IA — même style, mêmes formulations, même structure. Le cabinet américain Lohfeld Consulting, spécialisé dans les soumissions aux marchés publics, a documenté un signal d'alarme précis : la proportion de dossiers disqualifiés pour « manque de spécificité » est passée de <strong>18% à 43% en deux ans seulement</strong>, directement corrélée à la montée en puissance de l'IA. Ils appellent ce phénomène l'« AI Speak » — une prose professionnelle, fluide, mais vide de substance réelle. Si toutes les PME produisent des dossiers lisses et génériques, la différenciation disparaît. Soignez particulièrement l'introduction, les études de cas et la conclusion : ce sont les sections les plus mémorisées par les évaluateurs.",
+
+        "article.h2_6": "Ce que cela change vraiment pour une PME belge",
+        "article.p6_1": "Soyons précis sur les ordres de grandeur. Le 6e rapport annuel Loopio/APMP (2025) mesure une réduction de <strong>17% du temps moyen de réponse à l'échelle de l'industrie</strong> — de 30 à 25 heures. C'est la moyenne, tous utilisateurs confondus, y compris ceux qui utilisent peu ou pas l'IA. Parmi les équipes les plus avancées, les gains sont nettement plus élevés : des clients de QorusDocs rapportent produire 25 dossiers dans le temps qu'il leur fallait pour en produire 5. McKinsey chiffre à 25-40% les gains d'efficacité globaux des fonctions achats qui adoptent l'IA agentique. La vérité est au milieu : une PME bien outillée peut raisonnablement viser une réduction de 40 à 60% du temps consacré aux sections répétitives, tout en conservant l'intégralité du temps de réflexion stratégique.",
+        "article.p6_2": "Pour une PME belge, cela se traduit concrètement par la possibilité de répondre à des marchés auxquels elle renonçait faute de bande passante — les marchés flamands (nécessitant une traduction), les dossiers techniques volumineux, les lots secondaires d'un marché qu'elle aurait autrement ignorés. La plateforme e-Procurement publie plus de 40 000 avis de marché par an en Belgique. La plupart des PME n'en explorent qu'une fraction minuscule.",
+        "article.p6_3": "L'enjeu n'est pas de remplacer un bid manager que vous n'avez pas — c'est de rendre possible, pour la première fois, une stratégie systématique de réponse aux marchés publics, avec les ressources d'une PME."
+      },
+      en: {
+        "nav.services": "Services", "nav.about": "About", "nav.resources": "Resources", "nav.contact": "Contact",
+        "footer.tagline": "Artificial Intelligence Consultant", "footer.legal": "All rights reserved",
+        "article.date": "2 May 2026",
+        "article.readtime": "6 min read", "article.tag": "Practical guide",
+        "article.title": "Respond to Tenders 3x Faster with AI: a Practical Method for SMEs",
+        "article.back": "Back to resources",
+        "article.sources_title": "Sources",
+
+        "article.intro": "In Europe, public procurement accounts for roughly 14% of GDP — nearly €2 trillion per year. In Belgium alone, over €50 billion in contracts are published annually on platforms like e-Procurement and TED (Tenders Electronic Daily). And yet, dozens of SMEs give up every week on tenders they could have won. Not because they lack the skills — but because a complete response takes an average of 25 to 40 hours of work. With the same teams and the same resources, AI can radically change this equation.",
+
+        "article.h2_1": "The real problem isn't your win rate — it's your volume",
+        "article.p1_1": "Large companies have dedicated <em>bid management</em> teams — professionals whose sole job is responding to tenders. SMEs, by contrast, hand the task to a salesperson or the CEO, squeezed between client meetings and team catch-ups. The result: a typical SME manages to respond to just 3 or 4 tenders per quarter, when it could realistically handle 10 to 15.",
+        "article.p1_2": "The 6th Annual Loopio/APMP RFP Trends Report (2025), drawing on data from over 1,500 organisations worldwide, paints a striking picture: <strong>AI adoption among proposal teams doubled year-on-year, from 34% to 68%</strong>. Yet the time problem persists: 72% of proposal professionals still say they don't have enough time to respond to all relevant tenders. If dedicated teams are overwhelmed, imagine what it's like for an SME owner handling this between two client meetings.",
+        "article.p1_3": "What's counterintuitive is that the decisive variable isn't necessarily your win rate — it's your response volume. An SME that goes from 4 to 12 submissions per quarter with a steady 25% success rate mechanically triples its number of contracts won. AI won't improve your technical proposal — it will let you submit more proposals.",
+
+        "article.h2_2": "What AI genuinely handles well in a tender response",
+        "article.p2_intro": "A tender response isn't a monolithic document. It's made up of very different sections — some highly strategic, others deeply repetitive. It's on the latter that AI is unbeatable:",
+        "article.list2": '<li><strong>Tender document analysis:</strong> automatically extract evaluation criteria, their weightings, mandatory documents, deadlines and special clauses from an 80-page specification. What takes a human 3 hours takes an LLM 5 minutes.</li><li><strong>Compliance matrix:</strong> systematically verify that every requirement in the specification is addressed in your response — a mechanically precise task that tired humans regularly miss.</li><li><strong>Standard question responses:</strong> in any tender, 40 to 60% of the questions are recurring ("describe your quality policy", "present your references", "detail your organisation"). If you\'ve answered these questions once, AI can adapt them in seconds.</li><li><strong>Executive summary:</strong> draft the summary of your offer — often the only section the evaluation committee reads first — in a clear, structured and compelling way.</li><li><strong>Rewriting and consistency:</strong> transform rough technical text into professional prose, and unify the style register across the entire document.</li><li><strong>Translation:</strong> in Belgium, Walloon contracts are in French, Flemish contracts in Dutch, federal contracts sometimes in English. AI translates in minutes, with quality far superior to standard automatic translation tools.</li>',
+        "article.quote1": '<p>"On our largest files, we easily spent 35 to 40 hours. Today, with a well-structured document library and ChatGPT Enterprise, we\'re at 12-15 hours. And the files are objectively better — more consistent, better written."</p><cite>— Commercial director, IT services SME, Liège (2025)</cite>',
+
+        "article.h2_3": "The tools: two very different families",
+        "article.h3_specialized": "Specialised tender response platforms",
+        "article.p3_specialized": "These platforms combine a library of validated responses (your \"in-house content\") with an AI engine that automatically fills in new tenders from that base. They are designed for teams handling significant volumes:",
+        "article.list3_specialized": '<li><strong>Responsive</strong> (formerly RFPIO, enterprise market leader): customers report a 40% reduction in response time. Dedicated RFP interface, Salesforce/HubSpot integrations, quote-based pricing.</li><li><strong>Loopio</strong>: a direct competitor, widely used in North America. Users report responses produced 2.5x faster on average. More accessible than Responsive for growing SMEs.</li><li><strong>Tomorro</strong>: a French solution with GDPR-native architecture, well-suited to the European context. More oriented towards contracts and legal documents, but covers public procurement well.</li>',
+        "article.h3_llm": "General-purpose LLMs: the accessible option for SMEs",
+        "article.p3_llm": "Specialised tools cost several thousand euros per year. For the majority of Belgian SMEs, combining <strong>Claude Pro</strong> or <strong>ChatGPT Enterprise</strong> with a well-organised document library delivers 70 to 80% of the benefit at 5 to 10% of the cost. The key: build structured prompts and a library of validated responses that you feed progressively after each tender.",
+        "article.p3_llm2": "Claude is particularly well-suited to long documents thanks to its 200,000-token context window — roughly 150,000 words, the equivalent of an entire novel. You can feed it the complete specification and your reference responses all at once, without splitting.",
+
+        "article.h2_4": "The practical method: 4 steps for an AI-assisted response",
+        "article.step1_title": 'Tender specification analysis <span class="time-badge">30 min → 5 min</span>',
+        "article.step1_body": "Upload the complete specification to your LLM and ask it to extract: evaluation criteria and their weightings, mandatory technical requirements, the list of documents to provide, deadlines, and any knock-out clauses. In 5 minutes you get a structured summary that replaces 2 to 3 hours of careful reading.",
+        "article.step2_title": 'First draft generation <span class="time-badge">3 days → a few hours</span>',
+        "article.step2_body": "Provide the AI with your document library: company brochure, client reference sheets, certifications, organisational chart, quality policy. Ask it to draft each section of the response following the structure imposed by the specification. Start with the standard sections — they often represent 60% of the volume to be written.",
+        "article.step3_title": 'Strategic personalisation <span class="time-badge">non-negotiable human step</span>',
+        "article.step3_body": "This is the only step AI cannot do for you. Why you, why now, what is your specific value-add for this particular contract, what differentiating angle will you take against your likely competitors? This strategic thinking remains human — but you arrive with a complete draft, not a blank page. This is where you reclaim time to actually think.",
+        "article.step4_title": 'Final compliance check <span class="time-badge">2h → 20 min</span>',
+        "article.step4_body": "Before submission, ask the AI to review your complete file against the specification point by point. It catches omissions and inconsistencies with a mechanical rigour that an exhausted human at 11pm the night before the deadline cannot guarantee. Also submit your list of attachments for verification.",
+
+        "article.h2_5": "Three risks you cannot ignore",
+        "article.p5_intro": "The gains are real — but they don't come without precautions. Three points require vigilance:",
+        "article.h3_risk1": "Confidentiality of commercial data",
+        "article.p5_risk1": "Never submit client data, pricing, margins or sensitive commercial information into the public interfaces of ChatGPT.com or Claude.ai. This data may be used for model training. You must use <strong>Enterprise versions with a DPA (Data Processing Agreement)</strong> — ChatGPT Enterprise, Claude for Business, or solutions hosted on Azure OpenAI with data isolation. In Belgium, any processing of personal data in an AI tool is subject to GDPR.",
+        "article.h3_risk2": "Hallucinations and factual errors",
+        "article.p5_risk2": "LLMs can invent client references that don't exist, inflate figures or cite certifications you don't hold. In a public tender, a false declaration risks exclusion from the procedure and potentially legal proceedings. <strong>Every AI-generated section must be read and validated by a human</strong>, without exception. AI is an accelerator, not a signatory.",
+        "article.h3_risk3": "Homogenisation of responses",
+        "article.p5_risk3": "Public buyers evaluating dozens of files are beginning to detect AI-generated responses — same style, same phrasing, same structure. US proposal consultancy Lohfeld Consulting — specialists in public procurement bids — documented a precise warning signal: the proportion of proposal failures attributed to \"lack of specificity\" jumped from <strong>18% to 43% in just two years</strong>, directly tracking the rise of AI adoption. They call this \"AI Speak\" — professional, fluent prose that is hollow of real substance. If all SMEs produce smooth, generic files, differentiation disappears. Pay particular care to your introduction, case studies and conclusion: these are the sections evaluators remember.",
+
+        "article.h2_6": "What this actually changes for a Belgian SME",
+        "article.p6_1": "Let's be precise about the scale of gains. The 6th Annual Loopio/APMP report (2025) measures a <strong>17% reduction in average response time across the industry</strong> — from 30 to 25 hours. That's the average, including teams that use little or no AI. Among the most advanced users, gains are considerably higher: QorusDocs clients report producing 25 RFPs in the time it used to take to produce 5. McKinsey puts the overall efficiency gain for procurement functions adopting agentic AI at 25-40%. The honest figure for a well-equipped SME sits somewhere in between: a realistic 40 to 60% reduction on repetitive sections, while retaining all of your strategic thinking time.",
+        "article.p6_2": "For a Belgian SME, this translates concretely into the ability to respond to contracts it previously passed on for lack of bandwidth — Flemish contracts (requiring translation), large technical files, secondary lots of a framework contract it would otherwise have ignored. The e-Procurement platform publishes over 40,000 contract notices per year in Belgium. Most SMEs explore only a tiny fraction of them.",
+        "article.p6_3": "The goal isn't to replace a bid manager you don't have — it's to make possible, for the first time, a systematic tender response strategy with the resources of an SME."
+      }
+    };
+
+    let currentLang = localStorage.getItem('empira-lang') || 'fr';
+
+    function setLang(lang) {
+      currentLang = lang;
+      localStorage.setItem('empira-lang', lang);
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) el.innerHTML = translations[lang][key];
+      });
+      if (lang === 'en') {
+        document.title = 'Respond to Tenders 3x Faster with AI: a Practical Method for SMEs | EMPIRA';
+        document.querySelector('meta[name="description"]').content = 'How SMEs can halve or triple the time spent on public tender responses using generative AI. Practical method, tested tools and risks to know.';
+      } else {
+        document.title = "Répondre aux appels d'offres 3x plus vite grâce à l'IA : méthode et outils | EMPIRA";
+        document.querySelector('meta[name="description"]').content = "Comment les PME peuvent diviser par deux ou trois le temps consacré aux réponses aux marchés publics grâce à l'IA générative. Méthode concrète, outils testés et risques à connaître.";
+      }
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('lang-' + lang)?.classList.add('active');
+      document.getElementById('lang-' + lang + '-m')?.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      setLang(currentLang);
+    });
+  </script>
+</body>
+</html>
